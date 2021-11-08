@@ -37,7 +37,11 @@ def isRepdrome(lists):
     return True
 
 def isNondrome(lists):
-    if not isMetadrome(lists) and not isPlaindrome(lists) and not isKatadrome(lists) and not isNialpdrome(lists) and not isRepdrome(lists):
+    if not isMetadrome(lists)\
+        and not isPlaindrome(lists)\
+            and not isKatadrome(lists)\
+                and not isNialpdrome(lists)\
+                    and not isRepdrome(lists):
         return True
     else:
         return False
