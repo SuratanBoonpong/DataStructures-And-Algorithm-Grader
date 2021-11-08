@@ -10,7 +10,8 @@ def sortFootballClubs(lists):
     for i in range(len(sortedLists)):
         swapped = False
         for j in range(0,len(sortedLists)-i-1):
-            if (sortedLists[j][1].get("points") < sortedLists[j+1][1].get("points")) or (sortedLists[j][1].get("points") == sortedLists[j+1][1].get("points") and sortedLists[j][2].get("gd") < sortedLists[j+1][2].get("gd")):
+            if (sortedLists[j][1].get("points") < sortedLists[j+1][1].get("points"))\
+                or (sortedLists[j][1].get("points") == sortedLists[j+1][1].get("points") and sortedLists[j][2].get("gd") < sortedLists[j+1][2].get("gd")):
                 sortedLists[j],sortedLists[j+1] = sortedLists[j+1],sortedLists[j]
                 swapped = True
         if swapped == False:
