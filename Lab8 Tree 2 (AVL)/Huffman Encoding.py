@@ -1,3 +1,8 @@
+'''
+ให้นักศึกษาเขียนโปรแกรมในการเข้ารหัส Huffman (บีบอัดข้อมูล) โดยใช้ Tree และแสดงผลตามตัวอย่าง
+
+#อ่านวิธีการเข้ารหัสได้ที่ http://datastructurealgori.blogspot.com/2017/06/huffmans-code.html'''
+
 class Node:
     def __init__(self, data, freq, left = None, right = None):
         self.data = data 
